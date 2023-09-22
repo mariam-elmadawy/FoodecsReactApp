@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-gray-100 rounded overflow-hidden shadow-md relative;
+}
+
+.badge {
+  @apply absolute top-1  m-2 bg-gray-200 rounded-full p-2 text-gray-600 text-xs uppercase;
+}
+.btn {
+  @apply rounded-full py-2 px-4 text-sm text-white bg-red-700 hover:bg-red-900 uppercase;
+}
