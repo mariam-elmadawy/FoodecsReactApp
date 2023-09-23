@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         hero: "url('/src/assets/images/hero2.jpg')",
+        promo: "url('/src/assets/images/hero1.jpg')"
       }
     },
   },

@@ -6,7 +6,11 @@
   @apply px-24;
 }
 .card {
-  @apply bg-gray-100 rounded overflow-hidden shadow-md hover:shadow-lg relative;
+  @apply bg-gray-100 rounded overflow-hidden shadow-md hover:shadow-lg relative min-h-full;
+}
+
+.active {
+  @apply text-white border-b-2;
 }
 
 .badge {

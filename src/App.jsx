@@ -1,17 +1,19 @@
 import "./App.css";
-import About from "./components/About";
-import Cover from "./components/Cover";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
+import About from "./pages/About";
 
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Receipe from "./pages/Receipe";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
-    <>
-      <Cover />
-      <Home />
-      <About />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" Component={Home} />
+      <Route path="about" Component={About} />
+      <Route path="receipe/:id" Component={Receipe} />
+      <Route path="*" Component={NotFound} />
+      <Route />
+    </Routes>
   );
 }
 

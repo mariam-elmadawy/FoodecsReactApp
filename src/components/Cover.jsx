@@ -2,14 +2,11 @@ import Navbar from "./Navbar";
 export default function Cover() {
   return (
     <div className="w-full bg-center bg-cover bg-hero">
-      <div className=" w-full h-full bg-gray-900 bg-opacity-50 pb-12">
+      <div className=" w-full h-full bg-gray-900 bg-opacity-50 py-10">
         <Navbar />
         <div className="text-center flexColCenter">
           <div className="container px-4 mx-auto">
             <div className="max-w-4xl mx-auto text-center">
-              <span className="headText uppercase tracking-widest">
-                Foodecs
-              </span>
               <h2 className="mt-8 mb-6 text-4xl lg:text-5xl font-bold text-gray-100">
                 New Receipes Specially For you!
               </h2>

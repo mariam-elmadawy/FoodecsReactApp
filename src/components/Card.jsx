@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Card({ receipe }) {
   return (
-    <div className="font-display card">
+    <div className="card">
       <img
         src={receipe.image}
         alt={receipe.name}
@@ -11,7 +11,10 @@ export default function Card({ receipe }) {
         <span className="text-lg text-gray-800 uppercase font-bold tracking-wider ">
           {receipe.name}
         </span>
-        <span className="block text-gray-400">{receipe.desc}</span>
+        <p className="text-gray-400 my-3">{receipe.desc}</p>
+        <a href="" className="bg-gray-200 my-5 px-2 py-1  rounded">
+          View Receipe
+        </a>
       </div>
       <div className="badge">
         <span>{receipe.calories}</span>
