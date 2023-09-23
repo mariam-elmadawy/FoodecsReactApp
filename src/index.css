@@ -16,7 +16,7 @@
   @apply rounded-full py-2 px-4 text-sm text-white bg-red-700 hover:bg-red-900 uppercase;
 }
 .headText {
-  @apply text-red-700 text-2xl lg:text-4xl my-2;
+  @apply text-red-700 text-2xl lg:text-4xl my-2 py-2;
 }
 .secText {
   @apply text-green-700 text-xl font-semibold  py-4 border-b border-green-100;

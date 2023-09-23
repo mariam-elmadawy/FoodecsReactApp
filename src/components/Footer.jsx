@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 export default function Footer() {
   return (
-    <div className="flexColCenter mt-10 p-5 bg-gray-100 text-gray-600 text-md">
+    <div className="flexColCenter mt-10 p-5 bg-gray-100 text-gray-600 text-md text-center">
       <div>
         <ul className="flexRow">
           <li>

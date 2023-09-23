@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="flexCol paddings ">
+      <div className="flexCol paddings">
         <div className="headText">Know More About Us!</div>
         <div className="text-gray-600 text-xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat
@@ -16,18 +16,13 @@ export default function About() {
               accusamus in aliquam dolorem officia. Obcaecati dolor alias porro
               ipsa ex eveniet excepturi.
               <br />
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              doloremque quam aliquam mollitia iure ratione temporibus laborum
-              quas consequuntur! Possimus voluptatum ullam laudantium placeat
-              amet. Voluptatem ab vero totam praesentium.
-              <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in
               totam nam tenetur sed architecto. Veniam quisquam corrupti placeat
               fugit unde asperiores quidem doloribus, dicta autem! Laudantium
               officiis itaque vel?
             </p>
           </div>
-          <div className="text-center">
+          <div className="text-center flexColCenter">
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
                 Partners +120
@@ -36,7 +31,7 @@ export default function About() {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900">
-                Customer +100000
+                Customer +1000
               </h1>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>

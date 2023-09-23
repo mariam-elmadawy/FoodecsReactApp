@@ -1,13 +1,13 @@
 import "./App.css";
 import About from "./components/About";
+import Cover from "./components/Cover";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import { BrowserRouter,Route } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <Navbar />
+      <Cover />
       <Home />
       <About />
       <Footer />

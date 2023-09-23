@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         display: 'Cairo'
+      },
+      backgroundImage: {
+        hero: "url('/src/assets/images/hero2.jpg')",
       }
     },
   },
