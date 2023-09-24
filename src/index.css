@@ -17,7 +17,7 @@
   @apply absolute top-1  m-2 bg-gray-200 rounded-full p-2 text-gray-600 text-xs uppercase;
 }
 .btn {
-  @apply rounded-full py-2 px-4 text-sm text-white bg-red-700 hover:bg-red-900 uppercase;
+  @apply rounded-full py-2 px-4 text-sm text-white bg-red-700 hover:bg-red-900 uppercase font-semibold tracking-wider;
 }
 .headText {
   @apply text-red-700 text-2xl lg:text-4xl my-2 py-2;

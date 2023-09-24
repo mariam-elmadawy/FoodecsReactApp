@@ -14,7 +14,7 @@ export default function About() {
           dolores eos! Aperiam iste cupiditate sunt laboriosam aut libero
           aliquam.
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-gray-400">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 py-8 text-gray-400 border-b-2 border-gray-200">
           <div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
