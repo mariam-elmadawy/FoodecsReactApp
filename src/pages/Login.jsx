@@ -7,7 +7,6 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-
     const data = localStorage.getItem("userData");
 
     if (data && data.length) {

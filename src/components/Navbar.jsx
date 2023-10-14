@@ -1,40 +1,33 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
+  let [open, setOpen] = useState(false);
   return (
-    <nav className="px-12 flexRow ">
+    <nav className="px-12 md:flex justify-between items-center gap-4 relative">
       <div className="flex justify-between items-center">
-        <h1 className="font-semibold uppercase text-red-700 lg:text-2xl text-xl ">
+        <h1 className="font-semibold uppercase text-red-700 lg:text-2xl text-xl my-4">
           Foodecs
         </h1>
-      </div>
-      <div className="block md:hidden  ">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1em"
-          viewBox="0 0 448 512"
-          fill="white"
+        <span
+          className="cursor-pointer text-3xl text-white block md:hidden"
+          onClick={() => setOpen(!open)}
         >
-          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-        </svg>
+          <ion-icon name={open ? "close-outline" : "menu-outline"}></ion-icon>
+        </span>
       </div>
-      <div className="hidden md:inline-block ">
-        <ul className="text-gray-300 flexRow text-lg">
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink to="login" className="btn">
-              login
-            </NavLink>
-          </li>
-        </ul>
-      </div>
+      <ul
+        className={`text-gray-300 text-lg flex flex-col md:flex-row gap-4 text-center z-[-1] md:z-auto md:static  ${
+          open ? "top-20 " : "top-[-400px] absolute "
+        }`}
+      >
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="login" className="btn">
+          login
+        </NavLink>
+      </ul>
     </nav>
   );
 }
